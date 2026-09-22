@@ -79,7 +79,7 @@ export default function Home() {
       <Hero />
 
       {/* PROBLEM */}
-      <section className="border-b border-rule-light bg-paper py-[5.5rem] text-on-paper">
+      <section className="border-b border-rule-light bg-[#F7DDD5] py-[5.5rem] text-on-paper">
         <div className="mx-auto max-w-[1080px] px-7">
           <p className="mb-2.5 font-fraunces text-[15px] italic text-green">
             The problem
@@ -97,7 +97,7 @@ export default function Home() {
                   i === problemStats.length - 1 ? "border-b" : ""
                 }`}
               >
-                <div className="min-w-[150px] shrink-0 font-plex-mono text-[clamp(1.6rem,3vw,2.1rem)] text-green">
+                <div className="min-w-[150px] shrink-0 font-plex-mono text-[clamp(1.6rem,3vw,2.1rem)] text-[#0100A5]">
                   {s.figure}
                 </div>
                 <div>
@@ -115,7 +115,7 @@ export default function Home() {
       {/* SOLUTION */}
       <section className="bg-black py-[5.5rem]">
         <div className="mx-auto max-w-[1080px] px-7">
-          <p className="mb-2.5 font-fraunces text-[15px] italic text-brass-soft">
+          <p className="mb-2.5 font-fraunces text-[15px] italic text-[#299B6A]">
             The approach
           </p>
           <h2 className="mb-11 max-w-[22ch] font-fraunces text-[clamp(1.7rem,3vw,2.3rem)] font-medium text-on-dark">
@@ -128,7 +128,7 @@ export default function Home() {
                 key={step.n}
                 className="grid min-w-0 grid-cols-[48px_minmax(0,1fr)] gap-5 border-b border-rule-dark py-6 sm:grid-cols-[64px_minmax(0,1fr)]"
               >
-                <div className="font-plex-mono text-[1.1rem] text-brass-soft">
+                <div className="font-plex-mono text-[1.1rem] text-[#299B6A]">
                   {step.n}
                 </div>
                 <div>
@@ -145,7 +145,7 @@ export default function Home() {
 
           <div className="mt-10 rounded-[3px] border border-rule-dark bg-brass/5 px-[1.375rem] py-5">
             <p className="text-[0.92rem] text-on-dark-dim">
-              <strong className="font-medium text-brass-soft">
+              <strong className="font-medium text-[#299B6A]">
                 What this isn&rsquo;t:
               </strong>{" "}
               a brokerage, a bank, or a source of stock tips. No guaranteed
@@ -159,7 +159,7 @@ export default function Home() {
       </section>
 
       {/* TEAM */}
-      <section className="bg-paper py-[5.5rem] text-on-paper">
+      <section className="bg-[#F7DDD5] py-[5.5rem] text-on-paper">
         <div className="mx-auto max-w-[1080px] px-7">
           <p className="mb-2.5 font-fraunces text-[15px] italic text-green">
             Who&rsquo;s behind this
