@@ -1,4 +1,5 @@
 import WaitlistForm from "./WaitlistForm";
+import TeamMemberImage from "./TeamMemberImage";
 import { Hero } from "@/components/ui/animated-hero";
 
 const problemStats = [
@@ -112,7 +113,7 @@ export default function Home() {
       </section>
 
       {/* SOLUTION */}
-      <section className="bg-ink-soft py-[5.5rem]">
+      <section className="bg-black py-[5.5rem]">
         <div className="mx-auto max-w-[1080px] px-7">
           <p className="mb-2.5 font-fraunces text-[15px] italic text-brass-soft">
             The approach
@@ -164,28 +165,45 @@ export default function Home() {
             Who&rsquo;s behind this
           </p>
           <h2 className="mb-2 font-fraunces text-[clamp(1.7rem,3vw,2.3rem)] font-medium text-on-paper">
-            The founding team — names to follow.
+            THE fOUNDING DUO
           </h2>
 
           <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(min(190px,100%),1fr))] gap-x-7 gap-y-9">
-            {[0, 1].map((i) => (
-              <div key={i} className="border-t border-rule-light pt-6">
-                <div className="mb-[1.125rem] flex h-16 w-16 items-center justify-center rounded-full border-[1.5px] border-dashed border-on-paper-dim font-plex-mono text-xs text-on-paper-dim">
-                  —
-                </div>
+            {[
+              {
+                image: "/gyannirmaana.jpeg",
+                name: "GYAN PATHAK",
+                role: "Co-Founder",
+                linkedin: "https://www.linkedin.com/in/gyan-pathak-444b94339",
+              },
+              {
+                image: "/aadityanirmaana.jpeg",
+                name: "AADITYA KASHYAP",
+                role: "Co-Founder",
+                linkedin: "https://www.linkedin.com/in/aaditya-kashyap-3082732a0/",
+              },
+            ].map((person) => (
+              <div key={person.name} className="border-t border-rule-light pt-6">
+                <TeamMemberImage
+                  name={person.name}
+                  image={person.image}
+                  zoom={person.name === "GYAN PATHAK"}
+                />
                 <span className="inline-block min-w-[120px] border-b border-dashed border-on-paper-dim pb-1 font-fraunces text-[1.02rem] italic text-on-paper-dim">
-                  Name
+                  {person.name}
                 </span>
                 <span className="mt-2 block max-w-[140px] min-w-[90px] border-b border-dashed border-on-paper-dim pb-1 text-[13px] text-on-paper-dim">
-                  Role
+                  {person.role}
                 </span>
                 <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-[12px] text-on-paper-dim">
-                  <span className="border-b border-dashed border-on-paper-dim pb-1">
+                  <a
+                    href={person.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="border-b border-dashed border-on-paper-dim pb-1 transition-colors hover:text-on-paper"
+                  >
                     LinkedIn ID
-                  </span>
-                  <span className="border-b border-dashed border-on-paper-dim pb-1">
-                    Instagram ID
-                  </span>
+                  </a>
                 </div>
               </div>
             ))}
