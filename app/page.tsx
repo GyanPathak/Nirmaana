@@ -233,10 +233,10 @@ export default function Home() {
               LinkedIn:NIRMAANA
             </a>
             <a
-              href="mailto:hello@yourcompany.com"
+              href="mailto:admin.nirmaana@gmail.com"
               className="w-fit border-b border-dashed border-on-dark-dim pb-1 transition-colors hover:text-white"
             >
-              Email: hello@yourcompany.com
+              Email: admin.nirmaana@gmail.com
             </a>
           </div>
 
