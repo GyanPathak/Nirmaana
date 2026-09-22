@@ -196,7 +196,10 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="bg-black py-[4.5rem] pb-10">
         <div className="mx-auto max-w-[1080px] px-7">
-          <h2 className="mb-[1.875rem] max-w-[20ch] font-fraunces text-[clamp(1.5rem,3vw,2rem)] font-medium text-on-dark">
+          <h2
+            id="waitlist"
+            className="mb-[1.875rem] max-w-[20ch] font-fraunces text-[clamp(1.5rem,3vw,2rem)] font-medium text-on-dark"
+          >
             Want to know when this goes live?
           </h2>
 
@@ -204,12 +207,12 @@ export default function Home() {
 
           <div className="mt-10 flex flex-col gap-3 border-t border-rule-dark pt-6 text-[13px] text-on-dark-dim sm:flex-row sm:flex-wrap sm:gap-x-8">
             <a
-              href="https://www.linkedin.com/company/your-company"
+              href="https://www.linkedin.com/company/nirmaana/"
               target="_blank"
               rel="noreferrer"
               className="w-fit border-b border-dashed border-on-dark-dim pb-1 transition-colors hover:text-white"
             >
-              LinkedIn: company profile link
+              LinkedIn:NIRMAANA
             </a>
             <a
               href="mailto:hello@yourcompany.com"

@@ -75,17 +75,28 @@ function Hero() {
 
             <div className="flex flex-col gap-3 sm:flex-row">
               <Button
+                asChild
                 size="lg"
-                className="gap-4 border-white/70 bg-transparent text-white hover:bg-white hover:text-black"
+                className="border-white/70 bg-transparent text-white hover:bg-white hover:text-black"
                 variant="outline"
               >
+              <a
+                href="https://www.instagram.com/_.nirmaana_/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4"
+              >
                 Talk to us <PhoneCall className="h-4 w-4" />
+              </a>
               </Button>
               <Button
                 size="lg"
                 className="gap-4 bg-white text-black hover:bg-neutral-200"
+                asChild
               >
-                Join the waitlist <MoveRight className="h-4 w-4" />
+                <a href="#waitlist">
+                  Join the waitlist <MoveRight className="h-4 w-4" />
+                </a>
               </Button>
             </div>
           </div>
