@@ -165,7 +165,7 @@ export default function Home() {
             Who&rsquo;s behind this
           </p>
           <h2 className="mb-2 font-fraunces text-[clamp(1.7rem,3vw,2.3rem)] font-medium text-on-paper">
-            THE fOUNDING DUO
+            THE fOUNDING TRIO
           </h2>
 
           <div className="mt-8 grid grid-cols-[repeat(auto-fit,minmax(min(190px,100%),1fr))] gap-x-7 gap-y-9">
@@ -182,6 +182,13 @@ export default function Home() {
                 role: "Co-Founder",
                 linkedin: "https://www.linkedin.com/in/aaditya-kashyap-3082732a0/",
               },
+              {
+                image: "/anshitaji.jpeg",
+                name: "ANSHITA VASHNEY",
+                role: "CTO",
+                linkedin: "https://www.linkedin.com/in/anshita-varshney-38b746317/",
+              },
+              
             ].map((person) => (
               <div key={person.name} className="border-t border-rule-light pt-6">
                 <TeamMemberImage
