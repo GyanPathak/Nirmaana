@@ -184,7 +184,7 @@ export default function Home() {
               },
               {
                 image: "/anshitaji.jpeg",
-                name: "ANSHITA VASHNEY",
+                name: "ANSHITA VARSHNEY",
                 role: "CTO",
                 linkedin: "https://www.linkedin.com/in/anshita-varshney-38b746317/",
               },
